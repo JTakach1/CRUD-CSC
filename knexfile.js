@@ -6,8 +6,8 @@
 module.exports = {
 
   development: {
-    client: 'postgresql',
-    connection: process.env.DATABASE_URL,
+    client: 'cockroachdb',
+    connection: process.env.COCKROACHDB_URL,
     pool: {
       min: 2,
       max: 10
